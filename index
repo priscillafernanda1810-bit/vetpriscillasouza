@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priscilla F. de Souza | Veterinária Domiciliar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7a1f2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #7a1f2b;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+footer {
+    background: #7a1f2b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Priscilla F. de Souza</h1>
+        <p>Médica Veterinária • Atendimento Domiciliar em Curitiba</p>
+        <a class="btn" href="https://wa.me/5541988657210">Agendar pelo WhatsApp</a>
+    </div>
+</header>
+
+<section>
+    <h2>Serviços</h2>
+    <div class="services">
+        <div class="card">Consulta domiciliar</div>
+        <div class="card">Vacinação</div>
+        <div class="card">Atendimento geriátrico</div>
+        <div class="card">Acompanhamento clínico</div>
+    </div>
+</section>
+
+<section>
+    <h2>Sobre</h2>
+    <p>
+    Priscilla F. de Souza, Médica Veterinária (CRMV-PR 20447), oferece atendimento
+    domiciliar com foco no bem-estar, conforto e cuidado individualizado para cada paciente.
+    </p>
+</section>
+
+<footer>
+    <p>Curitiba • PR</p>
+    <p>CRMV-PR 20447</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5541988657210">💬</a>
+
+</body>
+</html>
