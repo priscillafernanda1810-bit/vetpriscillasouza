@@ -17,7 +17,7 @@ body::before {
     inset: 0;
     background: url('fundo.png') center no-repeat;
     background-size: 700px;
-    opacity: 0.03;
+    opacity: 0.00;
     z-index: -2;
 }
 
