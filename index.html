@@ -6,205 +6,126 @@
 
 <title>Veterinária Domiciliar em Curitiba | Priscilla F. de Souza</title>
 
-<meta name="description" content="Veterinária domiciliar em Curitiba. Atendimento veterinário em casa com conforto, segurança e cuidado personalizado para seu pet.">
+<meta name="description" content="Veterinária domiciliar em Curitiba. Atendimento em casa com conforto, segurança e cuidado personalizado para seu pet.">
+
+<link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-* { margin:0; padding:0; box-sizing:border-box; }
-
-body {
-    font-family:'Inter', sans-serif;
-    background:#f9f7f7;
-    color:#333;
-}
-
-/* NAVBAR */
-nav {
-    position:fixed;
-    width:100%;
-    top:0;
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.05);
-    z-index:1000;
-}
-
-nav img {
-    height:50px;
-}
-
-nav a {
-    text-decoration:none;
-    color:#7a1f2b;
-    margin-left:20px;
-    font-weight:500;
-}
-
-/* HERO */
-header {
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    img src="logo5.png"
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    padding-top:80px;
-}
-
-header h1 {
-    font-family:'Playfair Display', serif;
-    font-size:3.5em;
-}
-
-header p { margin-top:10px; font-size:1.2em; }
-
-.btn {
-    margin-top:25px;
-    padding:14px 30px;
-    background:#7a1f2b;
-    color:white;
-    border-radius:30px;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-.btn:hover { background:#5c1620; }
-
-/* SECTIONS */
-section {
-    padding:80px 20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-h2 {
-    font-family:'Playfair Display', serif;
-    color:#7a1f2b;
-    margin-bottom:30px;
-}
-
-.services {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card {
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
-    transition:0.3s;
-}
-
-.card:hover {
-    transform:translateY(-5px);
-}
-
-/* HIGHLIGHT */
-.highlight {
-    background:#7a1f2b;
-    color:white;
-    text-align:center;
-}
-
-/* ABOUT */
-.about {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-}
-
-/* FOOTER */
-footer {
-    background:#7a1f2b;
-    color:white;
-    text-align:center;
-    padding:40px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25d366;
-    padding:16px;
-    border-radius:50%;
-    font-size:20px;
-    color:white;
-    text-decoration:none;
-}
-</style>
 </head>
 
 <body>
+
+<!-- MARCA D’ÁGUA -->
+<div class="watermark">
+    <img src="logo2.png" alt="Logo">
+</div>
 
 <!-- NAVBAR -->
 <nav>
     <img src="logo5.png" alt="Priscilla Veterinária">
     <div>
-        <a href="#">Início</a>
-        <a href="#">Serviços</a>
-        <a href="#">Contato</a>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
     </div>
 </nav>
 
-<header>
-    <div>
+<!-- HERO -->
+<header id="inicio">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
         <h1>Atendimento Veterinário Domiciliar em Curitiba</h1>
-        <p>Conforto, segurança e cuidado personalizado para seu pet</p>
-        <a class="btn" href="https://wa.me/5541988657210?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta">Agendar pelo WhatsApp</a>
+        <p>
+        Cuidado, conforto e segurança para seu pet no ambiente onde ele se sente melhor.
+        </p>
+
+        <a class="btn" href="https://wa.me/5541988657210?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta">
+            Agendar pelo WhatsApp
+        </a>
     </div>
 </header>
 
+<!-- INTRO -->
 <section>
+    <h2>Veterinária Domiciliar em Curitiba</h2>
+    <p>
+    Atendimento veterinário em casa, proporcionando mais tranquilidade para o seu pet e praticidade para você.
+    </p>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
     <h2>Serviços</h2>
+
     <div class="services">
-        <div class="card">Consulta domiciliar</div>
-        <div class="card">Vacinação</div>
-        <div class="card">Atendimento geriátrico</div>
-        <div class="card">Acompanhamento clínico</div>
-        <div class="card">Orientação preventiva</div>
-        <div class="card">Exames clínicos</div>
+
+        <div class="card">
+            <img src="atendimento.jpg">
+            <p>Consulta domiciliar</p>
+        </div>
+
+        <div class="card">
+            <img src="vacina.jpg">
+            <p>Vacinação</p>
+        </div>
+
+        <div class="card">
+            <img src="idoso.jpg">
+            <p>Atendimento geriátrico</p>
+        </div>
+
+        <div class="card">
+            <img src="acompanhamento.jpg">
+            <p>Acompanhamento clínico</p>
+        </div>
+
     </div>
 </section>
 
+<!-- DIFERENCIAL -->
 <section class="highlight">
     <h2>Mais conforto para seu pet</h2>
-    <p>Atendimento no ambiente onde ele se sente seguro</p>
+    <p>Atendimento no ambiente onde ele se sente seguro, reduzindo o estresse e melhorando a experiência.</p>
 </section>
 
-<section class="about">
+<!-- SOBRE -->
+<section id="sobre" class="about">
+
     <div>
         <h2>Sobre</h2>
         <p>
         Priscilla F. de Souza – Médica Veterinária (CRMV-PR 20447).
         Atendimento domiciliar em Curitiba com foco em bem-estar,
-        tranquilidade e cuidado individualizado.
+        conforto e cuidado individualizado.
         </p>
     </div>
+
     <div>
-        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def" style="width:100%; border-radius:20px;">
+        <img src="sobre.jpg">
     </div>
+
 </section>
 
+<!-- CONTATO -->
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Atendimento em Curitiba e região</p>
+
+    <a class="btn" href="https://wa.me/5541988657210">
+        Falar no WhatsApp
+    </a>
+</section>
+
+<!-- RODAPÉ -->
 <footer>
     <p>Curitiba • PR</p>
     <p>CRMV-PR 20447</p>
 </footer>
 
+<!-- BOTÃO FLUTUANTE -->
 <a class="whatsapp" href="https://wa.me/5541988657210">💬</a>
 
 </body>
 </html>
-
-
