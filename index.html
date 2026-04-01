@@ -1,131 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Priscilla F. de Souza | Veterinária Domiciliar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>A. W Tech</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-header {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-.btn {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #7a1f2b;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-}
-
-section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2 {
-    font-family: 'Playfair Display', serif;
-    color: #7a1f2b;
-}
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-footer {
-    background: #7a1f2b;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
-}
-</style>
+    
 </head>
-
 <body>
 
-<header>
-    <div>
-        <h1>Priscilla F. de Souza</h1>
-        <p>Médica Veterinária • Atendimento Domiciliar em Curitiba</p>
-        <a class="btn" href="https://wa.me/5541988657210">Agendar pelo WhatsApp</a>
-    </div>
-</header>
+<div class="main-content">
 
-<section>
-    <h2>Serviços</h2>
-    <div class="services">
-        <div class="card">Consulta domiciliar</div>
-        <div class="card">Vacinação</div>
-        <div class="card">Atendimento geriátrico</div>
-        <div class="card">Acompanhamento clínico</div>
+    <header class="header">
+        <div class="wrap">
+            <!-- Logo transparente -->
+            <img src="assets/img/logo.png" alt="A W Tech" class="logo" />
+
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <button id="mobileBtn" class="mobile-btn" aria-expanded="false" aria-label="Abrir menu">☰</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-inner">
+                <h1> </h1>
+                <p class="lead"> </p>
+                
+            </div>
+        </section>
+            </div>
+    
+
+        <section id="servicos" class="servicos">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <p class="sub">Tecnologia, segurança e desempenho — soluções completas em portas automáticas e controle de acesso.</p>
+
+                <div class="grid">
+                    <a class="card" href="controle-de-acesso.html">
+                        <img src="assets/img/controle-acesso.png" alt="Controle de Acesso" loading="lazy">
+                        <h3>Controle de Acesso</h3>
+                        <p>Soluções com biometria, tag e fechaduras eletrônicas.</p>
+                    </a>
+
+                    <a class="card">
+                        <img src="assets/img/suporte.png" alt="Suporte Técnico" loading="lazy">
+                        <h3>Instalação & Suporte</h3>
+                        <p>Plano de manutenção preventiva e atendimento técnico especializado em Curitiba e região.</p>
+                    </a>
+                    
+                    <a class="card" href="portas-automaticas.html">
+                        <img src="assets/img/porta-automatica.png" alt="Portas Automáticas" loading="lazy">
+                        <h3>Portas Automáticas</h3>
+                        <p>Instalação, manutenção em automação para portas deslizantes, pivotantes e especiais.</p>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2>Sobre a A W Tech</h2>
+                <p>Com anos de experiência no setor, a A W Tech se consolidou como especialista em portas automáticas e controle de acesso. Nosso compromisso é entregar projetos eficientes, duráveis, modernos, seguros e confiáveis. Atuamos com instalação, automação e manutenção, sempre utilizando componentes de alta qualidade e uma equipe técnica experiente que garante excelência em cada projeto.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Solicite um orçamento via WhatsApp ou por e-mail.</p>
+
+                <div class="contact-row">
+                    <a class="btn whatsapp" href="https://wa.me/5541987022135">📞 WhatsApp</a>
+                    <a class="btn email" href="mailto:awtechportasautomaticas@gmail.com">✉️ E-mail</a>
+
+                    <section class="container">
+    <h2>Parcerias com fabricantes líderes em tecnologia.</h2>
+
+    <div class="grid-brands">
+        <article class="card-brand">
+            <img src="assets/img/marca1.png" alt="Marca 1" loading="lazy">
+        </article>
+
+        <article class="card-brand">
+            <img src="assets/img/marca2.png" alt="Marca 2" loading="lazy">
+        </article>
+
+        <article class="card-brand">
+            <img src="assets/img/marca3.png" alt="Marca 3" loading="lazy">
+        </article>
+
+        <article class="card-brand">
+            <img src="assets/img/marca4.png" alt="Marca 4" loading="lazy">
+        </article>
+
+        <article class="card-brand">
+            <img src="assets/img/marca5.png" alt="Marca 5" loading="lazy">
+        </article>
+
+        <article class="card-brand">
+            <img src="assets/img/marca6.png" alt="Marca 6" loading="lazy">
+        </article> 
     </div>
 </section>
+                </div>
+            </div>
+        </section>
 
-<section>
-    <h2>Sobre</h2>
-    <p>
-    Priscilla F. de Souza, Médica Veterinária (CRMV-PR 20447), oferece atendimento
-    domiciliar com foco no bem-estar, conforto e cuidado individualizado para cada paciente.
-    </p>
-</section>
+    </main>
 
-<footer>
-    <p>Curitiba • PR</p>
-    <p>CRMV-PR 20447</p>
-</footer>
+    <a class="whats-float" href="https://wa.me/5541987022135" aria-label="WhatsApp link">💬</a>
 
-<a class="whatsapp" href="https://wa.me/5541988657210">💬</a>
+    <footer class="footer">
+        <div class="container">
+    <div class="social-round">
+    <a href="https://instagram.com/awtechportasautomaticas" target="_blank" class="instagram" aria-label="Instagram">
+        <svg viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-.2-35.3-9.4-66.7-34.3-91.4C387.7 47.4 356.4 38.2 321.1 38c-35.6-.2-142.4-.2-178 0-35.2.2-66.5 9.4-91.2 34.1C27.3 96.8 18.1 128.1 17.9 163.4c-.2 35.6-.2 142.4 0 178  .2 35.3 9.4 66.7 34.3 91.4 24.7 24.7 56 33.9 91.2 34.1 35.6.2 142.4.2 178 0 35.3-.2 66.7-9.4 91.4-34.3 24.7-24.7 33.9-56 34.1-91.2.2-35.6.2-142.5 0-178.1z"/></svg>
+    </a>
+
+    <a href="https://facebook.com/SEU_FACEBOOK" target="_blank" class="facebook" aria-label="Facebook">
+        <svg viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91V127.77c0-25.35 12.42-50.06 52.24-50.06H293V6.26S262.43 0 234.48 0c-73.22 0-121.08 44.38-121.08 124.72V195.3H22.89V288h90.51v224h111.55V288z"/></svg>
+    </a>
+
+    <a href="https://wa.me/5541987022135" target="_blank" class="whatsapp" aria-label="WhatsApp">
+        <svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.6 32 224.6 32 103.5 32 4 131.5 4 252.6c0 44.4 11.6 87.7 33.8 125.6L0 480l105.5-36.7c35 19.1 74.4 29.2 115 29.2h.1c121.2 0 220.7-99.5 220.7-220.6 0-59-23.1-114.3-65-156.3z"/></svg>
+    </a>
+
+    <a href="mailto:awtechportasautomaticas@gmail.com" target="_blank" class="email" aria-label="Email">
+        <svg viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8L327.4 338c-15.7 13.3-39.2 13.3-54.9 0L9.7 190.8C3.9 186.3 0 179.5 0 172.1V128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v44.1c0 7.4-3.9 14.2-9.7 18.7zM0 212.6v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-208L327.4 360c-31.4 26.6-77.3 26.6-108.7 0L0 212.6z"/></svg>
+    </a>
+</div>
+
+            <p>• 📞 +55 41 98702-2135 •</p>
+            <p>• ✉️ awtechportasautomaticas@gmail.com •</p>
+            <p>© <span id="ano"></span> A W Tech — Curitiba</p>
+        </div>
+    </footer>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+<script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
 
 </body>
+
 </html>
+
