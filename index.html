@@ -3,120 +3,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Priscilla F. de Souza | Veterinária Domiciliar</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
 
-    
+<title>Veterinária Domiciliar em Curitiba | Priscilla F. de Souza</title>
+
+<meta name="description" content="Veterinária domiciliar em Curitiba. Consulta, vacinação e atendimento veterinário em casa com conforto e segurança para seu pet.">
+<meta name="keywords" content="veterinário domiciliar Curitiba, consulta veterinária em casa Curitiba, veterinária Curitiba">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family:'Inter', sans-serif;
+    background:#f9f7f7;
+    color:#333;
+}
+
+header {
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1517849845537-4d257902454a');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+header h1 {
+    font-family:'Playfair Display', serif;
+    font-size:3.5em;
+}
+
+header p { margin-top:10px; font-size:1.2em; }
+
+.btn {
+    margin-top:25px;
+    padding:14px 30px;
+    background:#7a1f2b;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+section {
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2 {
+    font-family:'Playfair Display', serif;
+    color:#7a1f2b;
+    margin-bottom:30px;
+}
+
+.services {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card {
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.highlight {
+    background:#7a1f2b;
+    color:white;
+    text-align:center;
+}
+
+.about {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+footer {
+    background:#7a1f2b;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    padding:16px;
+    border-radius:50%;
+    font-size:20px;
+    color:white;
+    text-decoration:none;
+}
+</style>
 </head>
+
 <body>
 
-<div class="main-content">
+<header>
+    <div>
+        <h1>Priscilla F. de Souza</h1>
+        <p>Veterinária Domiciliar em Curitiba</p>
+        <a class="btn" href="https://wa.me/5541988657210?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20veterinária%20domiciliar">Agendar pelo WhatsApp</a>
+    </div>
+</header>
 
-    <header class="header">
-        <div class="wrap">
-            <!-- Logo transparente -->
-            <img src="assets/img/logo.png" alt="A W Tech" class="logo" />
+<section>
+    <h2>Atendimento Veterinário Domiciliar em Curitiba</h2>
+    <p>
+    Atendimento veterinário em casa com conforto, segurança e atenção individualizada.
+    Ideal para pets que precisam de tranquilidade e cuidado personalizado.
+    </p>
+</section>
 
-            <nav class="nav" aria-label="Main navigation">
-                <a href="#servicos">Serviços</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
-
-            <button id="mobileBtn" class="mobile-btn" aria-expanded="false" aria-label="Abrir menu">☰</button>
-        </div>
-
-    </header>
-
-    <main>
-
-        <section class="hero" id="home">
-            <div class="hero-overlay"></div>
-            <div class="hero-inner">
-                <h1> </h1>
-                <p class="lead"> </p>
-                
-            </div>
-        </section>
-            </div>
-    
-
-        <section id="servicos" class="servicos">
-            <div class="container">
-                <h2>Nossos Serviços</h2>
-                <p class="sub">Tecnologia, segurança e desempenho — soluções completas em portas automáticas e controle de acesso.</p>
-
-                <div class="grid">
-                    <a class="card" href="controle-de-acesso.html">
-                        <img src="assets/img/controle-acesso.png" alt="Controle de Acesso" loading="lazy">
-                        <h3>Controle de Acesso</h3>
-                        <p>Soluções com biometria, tag e fechaduras eletrônicas.</p>
-                    </a>
-
-                    <a class="card">
-                        <img src="assets/img/suporte.png" alt="Suporte Técnico" loading="lazy">
-                        <h3>Instalação & Suporte</h3>
-                        <p>Plano de manutenção preventiva e atendimento técnico especializado em Curitiba e região.</p>
-                    </a>
-                    
-                    <a class="card" href="portas-automaticas.html">
-                        <img src="assets/img/porta-automatica.png" alt="Portas Automáticas" loading="lazy">
-                        <h3>Portas Automáticas</h3>
-                        <p>Instalação, manutenção em automação para portas deslizantes, pivotantes e especiais.</p>
-                    </a>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre" class="sobre">
-            <div class="container">
-                <h2>Sobre a A W Tech</h2>
-                <p>Com anos de experiência no setor, a A W Tech se consolidou como especialista em portas automáticas e controle de acesso. Nosso compromisso é entregar projetos eficientes, duráveis, modernos, seguros e confiáveis. Atuamos com instalação, automação e manutenção, sempre utilizando componentes de alta qualidade e uma equipe técnica experiente que garante excelência em cada projeto.</p>
-            </div>
-        </section>
-
-        <section id="contato" class="contato">
-            <div class="container">
-                <h2>Contato</h2>
-                <p>Solicite um orçamento via WhatsApp ou por e-mail.</p>
-
-                <div class="contact-row">
-                    <a class="btn whatsapp" href="https://wa.me/5541987022135">📞 WhatsApp</a>
-                    <a class="btn email" href="mailto:awtechportasautomaticas@gmail.com">✉️ E-mail</a>
-
-                    <section class="container">
-    <h2>Parcerias com fabricantes líderes em tecnologia.</h2>
-
-    <div class="grid-brands">
-        <article class="card-brand">
-            <img src="assets/img/marca1.png" alt="Marca 1" loading="lazy">
-        </article>
-
-        <article class="card-brand">
-            <img src="assets/img/marca2.png" alt="Marca 2" loading="lazy">
-        </article>
-
-        <article class="card-brand">
-            <img src="assets/img/marca3.png" alt="Marca 3" loading="lazy">
-        </article>
-
-        <article class="card-brand">
-            <img src="assets/img/marca4.png" alt="Marca 4" loading="lazy">
-        </article>
-
-        <article class="card-brand">
-            <img src="assets/img/marca5.png" alt="Marca 5" loading="lazy">
-        </article>
-
-        <article class="card-brand">
-            <img src="assets/img/marca6.png" alt="Marca 6" loading="lazy">
-        </article> 
+<section>
+    <h2>Serviços</h2>
+    <div class="services">
+        <div class="card">Consulta veterinária domiciliar</div>
+        <div class="card">Vacinação</div>
+        <div class="card">Atendimento geriátrico</div>
+        <div class="card">Acompanhamento clínico</div>
+        <div class="card">Orientação preventiva</div>
+        <div class="card">Exames clínicos</div>
     </div>
 </section>
-                </div>
-            </div>
-        </section>
+
+<section class="highlight">
+    <h2>Mais conforto para seu pet, mais tranquilidade para você</h2>
+    <p>Evite deslocamentos e reduza o estresse do seu animal com atendimento em casa.</p>
+</section>
+
+<section class="about">
+    <div>
+        <h2>Sobre</h2>
+        <p>
+        Priscilla F. de Souza – Médica Veterinária (CRMV-PR 20447).
+        Atendimento domiciliar em Curitiba com foco no bem-estar,
+        conforto e cuidado individualizado de cada paciente.
+        </p>
+    </div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def" style="width:100%; border-radius:20px;">
+    </div>
+</section>
+
+<section>
+    <h2>Área de Atendimento</h2>
+    <p>Atendimento veterinário domiciliar em Curitiba e região.</p>
+</section>
+
+<footer>
+    <p>Curitiba • PR</p>
+    <p>CRMV-PR 20447</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5541988657210">💬</a>
+
+</body>
+</html>
 
     </main>
 
