@@ -1,0 +1,1 @@
+// main.js original permanece igual (nenhuma mudança necessária)
