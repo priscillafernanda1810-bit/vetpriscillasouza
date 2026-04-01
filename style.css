@@ -4,12 +4,26 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    background: #f9f9f9;
-    color: #333;
+/* FUNDO COM LOGO */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('fundo.png') center no-repeat;
+    background-size: 700px;
+    opacity: 0.06;
+    z-index: -2;
 }
 
+/* CAMADA DE VIDRO (BLUR) */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+}
 /* NAVBAR */
 nav {
     position: fixed;
