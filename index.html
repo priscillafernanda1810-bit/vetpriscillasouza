@@ -6,8 +6,7 @@
 
 <title>Veterinária Domiciliar em Curitiba | Priscilla F. de Souza</title>
 
-<meta name="description" content="Veterinária domiciliar em Curitiba. Consulta, vacinação e atendimento veterinário em casa com conforto e segurança para seu pet.">
-<meta name="keywords" content="veterinário domiciliar Curitiba, consulta veterinária em casa Curitiba, veterinária Curitiba">
+<meta name="description" content="Veterinária domiciliar em Curitiba. Atendimento veterinário em casa com conforto, segurança e cuidado personalizado para seu pet.">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -20,6 +19,32 @@ body {
     color:#333;
 }
 
+/* NAVBAR */
+nav {
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav img {
+    height:50px;
+}
+
+nav a {
+    text-decoration:none;
+    color:#7a1f2b;
+    margin-left:20px;
+    font-weight:500;
+}
+
+/* HERO */
 header {
     height:100vh;
     background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -31,6 +56,7 @@ header {
     justify-content:center;
     text-align:center;
     color:white;
+    padding-top:80px;
 }
 
 header h1 {
@@ -47,8 +73,12 @@ header p { margin-top:10px; font-size:1.2em; }
     color:white;
     border-radius:30px;
     text-decoration:none;
+    transition:0.3s;
 }
 
+.btn:hover { background:#5c1620; }
+
+/* SECTIONS */
 section {
     padding:80px 20px;
     max-width:1100px;
@@ -72,20 +102,28 @@ h2 {
     padding:25px;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.3s;
 }
 
+.card:hover {
+    transform:translateY(-5px);
+}
+
+/* HIGHLIGHT */
 .highlight {
     background:#7a1f2b;
     color:white;
     text-align:center;
 }
 
+/* ABOUT */
 .about {
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:40px;
 }
 
+/* FOOTER */
 footer {
     background:#7a1f2b;
     color:white;
@@ -93,6 +131,7 @@ footer {
     padding:40px;
 }
 
+/* WHATSAPP */
 .whatsapp {
     position:fixed;
     bottom:20px;
@@ -109,26 +148,28 @@ footer {
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+    <img src="logo.png" alt="Logo Priscilla Veterinária">
+    <div>
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </div>
+</nav>
+
 <header>
     <div>
-        <h1>Priscilla F. de Souza</h1>
-        <p>Veterinária Domiciliar em Curitiba</p>
-        <a class="btn" href="https://wa.me/5541988657210?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20veterinária%20domiciliar">Agendar pelo WhatsApp</a>
+        <h1>Atendimento Veterinário Domiciliar em Curitiba</h1>
+        <p>Conforto, segurança e cuidado personalizado para seu pet</p>
+        <a class="btn" href="https://wa.me/5541988657210?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta">Agendar pelo WhatsApp</a>
     </div>
 </header>
 
 <section>
-    <h2>Atendimento Veterinário Domiciliar em Curitiba</h2>
-    <p>
-    Atendimento veterinário em casa com conforto, segurança e atenção individualizada.
-    Ideal para pets que precisam de tranquilidade e cuidado personalizado.
-    </p>
-</section>
-
-<section>
     <h2>Serviços</h2>
     <div class="services">
-        <div class="card">Consulta veterinária domiciliar</div>
+        <div class="card">Consulta domiciliar</div>
         <div class="card">Vacinação</div>
         <div class="card">Atendimento geriátrico</div>
         <div class="card">Acompanhamento clínico</div>
@@ -138,8 +179,8 @@ footer {
 </section>
 
 <section class="highlight">
-    <h2>Mais conforto para seu pet, mais tranquilidade para você</h2>
-    <p>Evite deslocamentos e reduza o estresse do seu animal com atendimento em casa.</p>
+    <h2>Mais conforto para seu pet</h2>
+    <p>Atendimento no ambiente onde ele se sente seguro</p>
 </section>
 
 <section class="about">
@@ -147,18 +188,13 @@ footer {
         <h2>Sobre</h2>
         <p>
         Priscilla F. de Souza – Médica Veterinária (CRMV-PR 20447).
-        Atendimento domiciliar em Curitiba com foco no bem-estar,
-        conforto e cuidado individualizado de cada paciente.
+        Atendimento domiciliar em Curitiba com foco em bem-estar,
+        tranquilidade e cuidado individualizado.
         </p>
     </div>
     <div>
         <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def" style="width:100%; border-radius:20px;">
     </div>
-</section>
-
-<section>
-    <h2>Área de Atendimento</h2>
-    <p>Atendimento veterinário domiciliar em Curitiba e região.</p>
 </section>
 
 <footer>
@@ -170,6 +206,5 @@ footer {
 
 </body>
 </html>
-
 
 
